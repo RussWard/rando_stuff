@@ -1,0 +1,21 @@
+
+.row {
+  width: 100%;
+  max-width: 2400px;
+  height: fit-content;
+}
+
+.col-50 {
+  text-align: center;
+  float:left;
+  width: 50%;
+}
+
+.signup {
+  background-color: #ddd;
+  height: 800px;
+}
+
+.login {
+  height: 800px;
+}
