@@ -16,6 +16,11 @@ export default function(ComposedComponent) {
       ReactDOM.findDOMNode(this).addEventListener('mouseleave', this.handleLeave)
     }
 
+    componentWillUnmount() {
+      ReactDOM.findDOMNode(this).removeEventListener('mouseenter', this.handleEnter)
+      ReactDOM.findDOMNode(this).removeEventListener('mouseleave', this.handleLeave)
+    }
+
     handleLeave(event) {
       ReactDOM.findDOMNode(event.target).removeChild(document.getElementById('popup'))
     }

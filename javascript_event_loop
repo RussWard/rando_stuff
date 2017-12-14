@@ -1,6 +1,6 @@
 The Javascript event loop is the system which allows the single threaded language 
 to execute asychronous code in a non blocking fashion.  When an asynchronous function is 
 passed onto the callstack, it's callback is placed into a separate thread (web APIs in 
-the browser, not sure in node) which executes the asynchronous call.  When that call
+the browser, C++ API in node) which executes the asynchronous call.  When that call
 resolves it passes the resolved value to the callback.  The callback is then added to a
 task queue and passed onto the callstack to be executed when the callstack is clear. 
